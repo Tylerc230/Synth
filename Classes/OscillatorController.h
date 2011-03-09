@@ -18,10 +18,13 @@
 	AudioStreamBasicDescription format_;
 	AudioQueueRef queue_;
 	AudioQueueBufferRef buffers_ [3];
+	BOOL playing_;
 
 }
+@property (nonatomic, readonly) BOOL playing;
 - (void)setup;
 - (void)addOscillator:(Oscillator * )osc withId:(int)id;
+- (Oscillator *)oscillatorWithId:(int)oscId;
 - (void)stop;
 - (void)play;
 

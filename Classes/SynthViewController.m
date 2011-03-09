@@ -8,43 +8,60 @@
 
 #import "SynthViewController.h"
 #import "SineOscillator.h"
+#import "SquareOscillator.h"
+#import "TriangleOscillator.h"
 #import "OscillatorView.h"
 
+
 @interface SynthViewController ()
-- (Oscillator *)createOscillator;
+- (Oscillator*)createOscillator:(int)index;
+- (void)longHoldOccured:(NSTimer*) timer;
+- (void)showRadialMenu;
 @end
 
 @implementation SynthViewController
 
 - (IBAction)playPressed:(id)button
 {
-	[controller_ play];	
+	if(controller_.playing)
+		[controller_ stop];
+	else
+		[controller_ play];	
 }
 
-- (IBAction)addPressed:(id)button
-{
 
-		
-}
-
-- (Oscillator*)createOscillator
+- (Oscillator*)createOscillator:(int)index
 {
 	OscillatorView * view = [[OscillatorView alloc] init];
 	[oscillatorViews_ addObject:view];
 	[self.view addSubview:view];
 	int oscillatorId = 3000 + oscillatorViews_.count;
 	view.tag = oscillatorId;
-	SineOscillator * sine = [[SineOscillator alloc] init];
-	[controller_ addOscillator:sine withId:oscillatorId];
-	[sine release];
-	return sine;
+	Class osClass = nil;
+	switch (index) {
+		case 1:
+			osClass = [SineOscillator class];
+			break;
+		case 2:
+			osClass = [SquareOscillator class];
+			break;
+		case 3:
+			osClass = [TriangleOscillator class];
+			break;
+		default:
+			break;
+	}
+	Oscillator * osc = [[osClass alloc] init];
+	[controller_ addOscillator:osc withId:oscillatorId];
+	[osc release];
+	return osc;
 	
 }
 
 - (float)pitchForTouch:(UITouch *)touch
 {
 	float base = 0;
-	float range = 400.f;
+	float range = 100.f;
 	float y = [touch locationInView:self.view].y;
 	float windowHeight = self.view.frame.size.height;
 	float ratio = 1 - (y/windowHeight);
@@ -70,13 +87,27 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-
-	draggingOsc_ = [self createOscillator];
-	[self setOsc:draggingOsc_ withTouch:[touches anyObject]];
+	UITouch * touch = [touches anyObject];
+	for (OscillatorView * oscView in oscillatorViews_) {
+		if (CGRectContainsPoint(oscView.frame, [touch locationInView:self.view]))
+		{
+			draggingOsc_ = [controller_ oscillatorWithId:oscView.tag];
+			break;
+		}
+	}
+	if(draggingOsc_ == nil)
+	{
+		[self showRadialMenu];
+		currentTouch_ = [touch retain];
+	}else{
+		[self setOsc:draggingOsc_ withTouch:[touches anyObject]];
+		longHold_ = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(longHoldOccured:) userInfo:draggingOsc_ repeats:NO];
+	}
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
+	[longHold_ invalidate], longHold_ = nil;
 	OscillatorView * currentView = (OscillatorView*)[self.view viewWithTag:draggingOsc_.oscId];
 	currentView.center = [[touches anyObject] locationInView:self.view];
 	[self setOsc:draggingOsc_ withTouch:[touches anyObject]];
@@ -84,10 +115,35 @@
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
+	[longHold_ invalidate], longHold_ = nil;
+	draggingOsc_ = nil;
+}
+
+- (void)longHoldOccured:(NSTimer*) timer
+{
 	
 }
 
+- (void)showRadialMenu
+{
+	currentMenu_ = [[RadialMenuViewController alloc] init];
+	currentMenu_.menuDelegate = self;
+	currentMenu_.view.center = CGPointMake(CGRectGetMidX(self.view.frame), CGRectGetMidY(self.view.frame));
+	[self.view addSubview:currentMenu_.view];
+}
 
+- (void)hideRadialMenu
+{
+	[currentMenu_.view removeFromSuperview];
+	[currentMenu_ release];
+}
+
+- (void)itemIndexSelected:(int)itemIndex
+{
+	Oscillator * osc = [self createOscillator:itemIndex];
+	[self setOsc:osc withTouch:currentTouch_];
+	[self hideRadialMenu];
+}
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];

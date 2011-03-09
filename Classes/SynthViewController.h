@@ -8,15 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import "OscillatorController.h"
+#import "RadialMenuViewController.h"
 
 @interface SynthViewController : UIViewController {
 	OscillatorController * controller_;
 	NSMutableArray * oscillatorViews_;
 	Oscillator * draggingOsc_;
+	NSTimer * longHold_;
+	UITouch * currentTouch_;
+	RadialMenuViewController * currentMenu_;
 }
 
-- (IBAction)playPressed:(id)button;
 - (IBAction)addPressed:(id)button;
+- (void)itemIndexSelected:(int)itemIndex;
 
 @end
 

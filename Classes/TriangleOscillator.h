@@ -1,15 +1,16 @@
 //
-//  SineOssillator.h
+//  TriangleOscillator.h
 //  Synth
 //
-//  Created by Tyler Casselman on 3/5/11.
+//  Created by Tyler Casselman on 3/8/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "Oscillator.h"
 
-@interface SineOscillator : Oscillator {
+@interface TriangleOscillator : Oscillator {
+    
 }
 
 @end

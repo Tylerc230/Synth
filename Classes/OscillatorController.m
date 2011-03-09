@@ -22,7 +22,7 @@ static void buffer_callback(void * userData, AudioQueueRef inAQ, AudioQueueBuffe
 @end
 
 @implementation OscillatorController
-
+@synthesize playing = playing_;
 - (void)setup
 {
 	oscillators_ = [[NSMutableDictionary alloc] initWithCapacity:10];
@@ -69,12 +69,18 @@ static void buffer_callback(void * userData, AudioQueueRef inAQ, AudioQueueBuffe
 	[oscillators_ setObject:osc forKey:[NSNumber numberWithInt:oscillatorId]];
 }
 
+- (Oscillator *)oscillatorWithId:(int)oscId
+{
+	return  [oscillators_ objectForKey:[NSNumber numberWithInt:oscId]];
+}
+
 - (void)play
 {
+	playing_ = YES;
 	OSStatus failure;
 	FAIL_ON_ERR(AudioQueueNewOutput(&format_, buffer_callback, self, CFRunLoopGetCurrent(), kCFRunLoopCommonModes, 0, &queue_));
 
-    UInt32 bufferSize = format_.mSampleRate * format_.mBytesPerPacket * .5f;
+    UInt32 bufferSize = format_.mSampleRate * format_.mBytesPerPacket * .1f;
 	
     for (int i = 0; i < 3; i++) {
         FAIL_ON_ERR(AudioQueueAllocateBuffer(queue_, bufferSize, &buffers_[i]));
@@ -83,17 +89,24 @@ static void buffer_callback(void * userData, AudioQueueRef inAQ, AudioQueueBuffe
         buffer_callback(self, queue_, buffers_[i]);
 	}
 	FAIL_ON_ERR(AudioQueueStart(queue_, NULL));
+
 	
 }
 
 - (void)stop
 {
-	
-	
+	playing_ = NO;
+	OSStatus failure;
+	FAIL_ON_ERR(AudioQueueStop(queue_, YES));
+	FAIL_ON_ERR(AudioQueueDispose(queue_, YES));
+	queue_ = NULL;	
+
 }
 
 - (void)fillBuffer:(AudioQueueBufferRef) buffer
 {
+	if(!playing_)
+		return;
 	OSStatus failure;
 	int16_t * sampleBuffer = buffer->mAudioData;
     UInt32 numFrames = buffer->mAudioDataBytesCapacity / format_.mBytesPerFrame;
