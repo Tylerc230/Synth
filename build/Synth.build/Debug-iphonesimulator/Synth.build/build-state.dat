@@ -1,0 +1,261 @@
+TSynth
+v7
+r0
+t321063870.324952
+cCheck dependencies
+cProcessInfoPlistFile /Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/Info.plist Synth-Info.plist
+cCompileXIB /Users/tcasselman/Software_git/Synth/MainWindow.xib
+cCompileXIB /Users/tcasselman/Software_git/Synth/SynthViewController.xib
+cProcessPCH /var/folders/f-/f-e+G6fbF9qNM2Z1o+hI+k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Synth_Prefix-guaqfnjckljtuaasqwwobtfpcqvp/Synth_Prefix.pch.gch Synth_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/main.o /Users/tcasselman/Software_git/Synth/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/SynthAppDelegate.o /Users/tcasselman/Software_git/Synth/Classes/SynthAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/SynthViewController.o /Users/tcasselman/Software_git/Synth/Classes/SynthViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/Synth normal i386
+cGenerateDSYMFile /Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app.dSYM /Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/Synth
+cTouch /Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004CC1224600000000001EA9C0
+t1287725638
+s2009536
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Users/tcasselman/Software_git/Synth/Classes/SynthAppDelegate.h
+c000000004D72D42900000000000001D5
+t1299371049
+s469
+i<UIKit/UIKit.h>
+
+N/Users/tcasselman/Software_git/Synth/Classes/SynthAppDelegate.m
+c000000004D72D4290000000000000A8D
+t1299371049
+s2701
+i"SynthAppDelegate.h"
+i"SynthViewController.h"
+
+N/Users/tcasselman/Software_git/Synth/Classes/SynthViewController.h
+c000000004D72D42900000000000000EA
+t1299371049
+s234
+i<UIKit/UIKit.h>
+
+N/Users/tcasselman/Software_git/Synth/Classes/SynthViewController.m
+c000000004D72D42900000000000005BB
+t1299371049
+s1467
+i"SynthViewController.h"
+
+N/Users/tcasselman/Software_git/Synth/MainWindow.xib
+c000000004D72D4290000000000004E11
+t1299371049
+s19985
+
+N/Users/tcasselman/Software_git/Synth/SynthViewController.xib
+c000000004D72D4290000000000001A3D
+t1299371049
+s6717
+
+N/Users/tcasselman/Software_git/Synth/Synth_Prefix.pch
+c000000004D72D42900000000000000B3
+t1299371049
+s179
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app
+t1299371070
+s238
+
+N/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app.dSYM
+t1299371070
+s102
+
+N/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/Info.plist
+t1299371059
+s583
+
+N/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/MainWindow.nib
+t1299371067
+s1119
+
+N/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/PkgInfo
+t1299371059
+s8
+
+N/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/Synth
+t1299371070
+s16952
+
+N/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/SynthViewController.nib
+t1299371067
+s795
+
+N/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/Synth.LinkFileList
+c000000004D72D4330000000000000177
+t1299371059
+s375
+
+N/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/SynthAppDelegate.o
+t1299371069
+s50776
+
+N/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/SynthViewController.o
+t1299371069
+s37452
+
+N/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/main.o
+t1299371069
+s6300
+
+N/Users/tcasselman/Software_git/Synth/main.m
+c000000004D72D4290000000000000169
+t1299371049
+s361
+i<UIKit/UIKit.h>
+
+N/var/folders/f-/f-e+G6fbF9qNM2Z1o+hI+k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Synth_Prefix-guaqfnjckljtuaasqwwobtfpcqvp/Synth_Prefix.pch.gch
+t1299371069
+s15453392
+
+NSynth-Info.plist
+c000000004D72D429000000000000038D
+t1299371049
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies321063859#321063859#0(0"0(0#1#0"3343187568374212096#0"0#
+
+CCompileC build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/SynthAppDelegate.o /Users/tcasselman/Software_git/Synth/Classes/SynthAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321063869.371078
+e321063869.810546
+r1
+xCompileC
+xbuild/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/SynthAppDelegate.o
+x/Users/tcasselman/Software_git/Synth/Classes/SynthAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/tcasselman/Software_git/Synth/Classes/SynthAppDelegate.m321063869#321063869#0(0"0(0#0#63"/Users/tcasselman/Software_git/Synth/Classes/SynthAppDelegate.m8609762272#1884"    cd /Users/tcasselman/Software_git/Synth    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-generated-files.hmap -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-own-target-headers.hmap -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-all-target-headers.hmap -iquote /Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-project-headers.hmap -F/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator -I/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/include -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/DerivedSources/i386 -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/DerivedSources -include /var/folders/f-/f-e+G6fbF9qNM2Z1o+hI+k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Synth_Prefix-guaqfnjckljtuaasqwwobtfpcqvp/Synth_Prefix.pch -c /Users/tcasselman/Software_git/Synth/Classes/SynthAppDelegate.m -o /Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/SynthAppDelegate.o0#
+
+CCompileC build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/SynthViewController.o /Users/tcasselman/Software_git/Synth/Classes/SynthViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321063869.708994
+e321063869.819851
+r1
+xCompileC
+xbuild/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/SynthViewController.o
+x/Users/tcasselman/Software_git/Synth/Classes/SynthViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/tcasselman/Software_git/Synth/Classes/SynthViewController.m321063869#321063869#0(0"0(0#0#66"/Users/tcasselman/Software_git/Synth/Classes/SynthViewController.m8600891680#1890"    cd /Users/tcasselman/Software_git/Synth    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-generated-files.hmap -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-own-target-headers.hmap -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-all-target-headers.hmap -iquote /Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-project-headers.hmap -F/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator -I/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/include -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/DerivedSources/i386 -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/DerivedSources -include /var/folders/f-/f-e+G6fbF9qNM2Z1o+hI+k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Synth_Prefix-guaqfnjckljtuaasqwwobtfpcqvp/Synth_Prefix.pch -c /Users/tcasselman/Software_git/Synth/Classes/SynthViewController.m -o /Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/SynthViewController.o0#
+
+CCompileC build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/main.o /Users/tcasselman/Software_git/Synth/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321063869.368680
+e321063869.708810
+r1
+xCompileC
+xbuild/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/main.o
+x/Users/tcasselman/Software_git/Synth/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@51"Compile /Users/tcasselman/Software_git/Synth/main.m321063869#321063869#0(0"0(0#0#43"/Users/tcasselman/Software_git/Synth/main.m8610503616#1852"    cd /Users/tcasselman/Software_git/Synth    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-generated-files.hmap -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-own-target-headers.hmap -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-all-target-headers.hmap -iquote /Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-project-headers.hmap -F/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator -I/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/include -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/DerivedSources/i386 -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/DerivedSources -include /var/folders/f-/f-e+G6fbF9qNM2Z1o+hI+k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Synth_Prefix-guaqfnjckljtuaasqwwobtfpcqvp/Synth_Prefix.pch -c /Users/tcasselman/Software_git/Synth/main.m -o /Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/tcasselman/Software_git/Synth/MainWindow.xib
+s321063859.517519
+e321063867.528130
+r1
+xCompileXIB
+x/Users/tcasselman/Software_git/Synth/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib321063859#321063867#0(0"0(0#0#51"/Users/tcasselman/Software_git/Synth/MainWindow.xib8605968960#562"    cd /Users/tcasselman/Software_git/Synth    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/MainWindow.nib /Users/tcasselman/Software_git/Synth/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/tcasselman/Software_git/Synth/SynthViewController.xib
+s321063859.578851
+e321063867.523092
+r1
+xCompileXIB
+x/Users/tcasselman/Software_git/Synth/SynthViewController.xib
+lSLF07#2@34"CompileXIB SynthViewController.xib321063859#321063867#0(0"0(0#0#60"/Users/tcasselman/Software_git/Synth/SynthViewController.xib8595079392#580"    cd /Users/tcasselman/Software_git/Synth    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/SynthViewController.nib /Users/tcasselman/Software_git/Synth/SynthViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CGenerateDSYMFile /Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app.dSYM /Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/Synth
+s321063870.157677
+e321063870.293886
+r1
+xGenerateDSYMFile
+x/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app.dSYM
+x/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/Synth
+lSLF07#2@103"GenerateDSYMFile build/Debug-iphonesimulator/Synth.app.dSYM build/Debug-iphonesimulator/Synth.app/Synth321063870#321063870#0(0"0(0#0#80"/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/Synth8590433824#371"    cd /Users/tcasselman/Software_git/Synth    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/Synth -o /Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app.dSYM0#
+
+CLd /Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/Synth normal i386
+s321063869.819978
+e321063870.157435
+r1
+xLd
+x/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/Synth
+xnormal
+xi386
+lSLF07#2@85"Link /Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/Synth321063869#321063870#0(0"0(0#0#0"8598573344#880"    cd /Users/tcasselman/Software_git/Synth    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator -F/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator -filelist /Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/Synth.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/Synth0#
+
+CProcessInfoPlistFile /Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/Info.plist Synth-Info.plist
+s321063859.433046
+e321063859.517391
+r1
+xProcessInfoPlistFile
+x/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/Info.plist
+xSynth-Info.plist
+lSLF07#2@24"Process Synth-Info.plist321063859#321063859#0(0"0(0#0#53"/Users/tcasselman/Software_git/Synth/Synth-Info.plist28429445101453416#467"    cd /Users/tcasselman/Software_git/Synth    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Synth-Info.plist -genpkginfo /Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/Info.plist0#
+
+CProcessPCH /var/folders/f-/f-e+G6fbF9qNM2Z1o+hI+k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Synth_Prefix-guaqfnjckljtuaasqwwobtfpcqvp/Synth_Prefix.pch.gch Synth_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s321063867.528723
+e321063869.368313
+r1
+xProcessPCH
+x/var/folders/f-/f-e+G6fbF9qNM2Z1o+hI+k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Synth_Prefix-guaqfnjckljtuaasqwwobtfpcqvp/Synth_Prefix.pch.gch
+xSynth_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@27"Precompile Synth_Prefix.pch321063867#321063869#0(0"0(0#0#53"/Users/tcasselman/Software_git/Synth/Synth_Prefix.pch8609826144#1748"    cd /Users/tcasselman/Software_git/Synth    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-generated-files.hmap -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-own-target-headers.hmap -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-all-target-headers.hmap -iquote /Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-project-headers.hmap -F/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator -I/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/include -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/DerivedSources/i386 -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/DerivedSources -c /Users/tcasselman/Software_git/Synth/Synth_Prefix.pch -o /var/folders/f-/f-e+G6fbF9qNM2Z1o+hI+k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Synth_Prefix-guaqfnjckljtuaasqwwobtfpcqvp/Synth_Prefix.pch.gch0#
+
+CTouch /Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app
+s321063870.294040
+e321063870.324799
+r1
+xTouch
+x/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app
+lSLF07#2@80"Touch /Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app321063870#321063870#0(0"0(0#0#0"8610392128#272"    cd /Users/tcasselman/Software_git/Synth    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app0#
+
