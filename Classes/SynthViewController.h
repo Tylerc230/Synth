@@ -19,7 +19,6 @@
 	RadialMenuViewController * currentMenu_;
 }
 
-- (IBAction)addPressed:(id)button;
 - (void)itemIndexSelected:(int)itemIndex;
 
 @end

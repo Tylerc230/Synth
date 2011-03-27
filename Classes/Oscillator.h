@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 
 typedef struct{
-	int16_t left;
-	int16_t right;
+	float left;
+	float right;
 }AudioFrame;
 @interface Oscillator : NSObject {
 @protected
@@ -19,15 +19,18 @@ typedef struct{
 	float amplitude_;
 	float balance_;
 	float phaseIncrement_;
-	float currentPhase_;	
+	float phaseBase_;
+	Oscillator * pitchModulator_;
 
 }
 @property (nonatomic, assign) int oscId;
 @property (nonatomic, assign) float frequency;
 @property (nonatomic, assign) float amplitude;
 @property (nonatomic, assign) float balance;
+@property (nonatomic, retain) Oscillator * pitchModulator;
+@property (nonatomic, readonly) float currentPhase;
 
 - (AudioFrame)nextFrame;
-- (AudioFrame)getFrameForSample:(float)relativeValue;
+- (float)sample;
 - (void)update;
 @end

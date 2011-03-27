@@ -14,16 +14,16 @@
 {
 	if((self = [super init]))
 	{
-		currentPhase_ = 0.f;
 	}
 	return self;
 }
 
-
-- (AudioFrame)nextFrame
+- (float)sample
 {
-	float sample = sinf(currentPhase_ * 2 * M_PI);
-	return [self getFrameForSample:sample];
-	
+	float phase = self.currentPhase;
+	float amplitude = self.amplitude;
+	float sample = sinf(phase * 2 * M_PI)  * amplitude;
+	return sample;
 }
+
 @end

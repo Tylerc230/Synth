@@ -14,6 +14,8 @@
 @synthesize frequency = frequency_;
 @synthesize amplitude = amplitude_;
 @synthesize balance = balance_;
+@synthesize pitchModulator = pitchModulator_;
+@dynamic currentPhase;
 
 - (id)init
 {
@@ -21,6 +23,7 @@
 	{
 		self.amplitude = .5f;
 		self.balance = .5f;
+		phaseBase_ = 0.f;
 		
 	}
 	return self;
@@ -35,12 +38,7 @@
 
 - (AudioFrame)nextFrame
 {
-	return (AudioFrame){.left =0, .right = 0};
-}
-
-- (AudioFrame)getFrameForSample:(float)relativeValue
-{
-	int16_t sample = relativeValue * self.amplitude * INT16_MAX;
+	float sample = [self sample];
 	AudioFrame nextFrame;
 	float leftAmp = 1 - self.balance;
 	float rightAmp = self.balance;
@@ -48,16 +46,27 @@
 	nextFrame.right = sample * rightAmp;
 	[self update];
 	return nextFrame;
-	
+}
+
+- (float)sample
+{
+	return 0;
 }
 
 - (void)update
 {
-	currentPhase_ += phaseIncrement_;	
-	while(currentPhase_ > 1.0)
+	phaseBase_ += phaseIncrement_;	
+	[pitchModulator_ update];
+	while(phaseBase_ > 1.0)
 	{
-		currentPhase_ -= 1.0;
+		phaseBase_ -= 1.0;
 	}
+}
+
+- (float)currentPhase 
+{
+	float modulation = [pitchModulator_ sample] + 1;
+	return phaseBase_ * modulation;
 }
 
 @end

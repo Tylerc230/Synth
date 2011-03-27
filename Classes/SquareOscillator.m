@@ -11,11 +11,10 @@
 
 @implementation SquareOscillator
 
-- (AudioFrame)nextFrame
+- (float)sample
 {
-	float sample = currentPhase_ > .5 ? 1 : -1;	
-	NSLog(@"tri %f", sample);
-	return [self getFrameForSample:sample];
+	float sample = self.currentPhase > .5 ? 1 : -1;	
+	return sample * self.amplitude;
 	
 }
 

@@ -10,10 +10,10 @@
 
 
 @implementation TriangleOscillator
-- (AudioFrame)nextFrame
+- (float)sample
 {
-	float sample = currentPhase_ < .5 ? (currentPhase_ * 4 - 1) : (currentPhase_ * -4 + 3);
-	return [self getFrameForSample:sample];
+	float sample = self.currentPhase < .5 ? (self.currentPhase * 4 - 1) : (self.currentPhase * -4 + 3);
+	return sample * self.amplitude;
 	
 }
 @end

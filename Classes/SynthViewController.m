@@ -52,6 +52,10 @@
 			break;
 	}
 	Oscillator * osc = [[osClass alloc] init];
+	Oscillator * pitchMod = [[SineOscillator alloc] init];
+	pitchMod.frequency = .5f;
+	osc.pitchModulator = pitchMod;
+	[pitchMod release];
 	[controller_ addOscillator:osc withId:oscillatorId];
 	[osc release];
 	return osc;
@@ -150,6 +154,7 @@
 	oscillatorViews_ = [[NSMutableArray alloc] initWithCapacity:10];
 	controller_ = [[OscillatorController alloc] init];
 	[controller_ setup];
+	[controller_ play];
 }
 
 
