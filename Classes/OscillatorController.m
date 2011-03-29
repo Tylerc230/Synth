@@ -80,7 +80,7 @@ static void buffer_callback(void * userData, AudioQueueRef inAQ, AudioQueueBuffe
 	OSStatus failure;
 	FAIL_ON_ERR(AudioQueueNewOutput(&format_, buffer_callback, self, CFRunLoopGetCurrent(), kCFRunLoopCommonModes, 0, &queue_));
 
-    UInt32 bufferSize = format_.mSampleRate * format_.mBytesPerPacket * .1f;
+    UInt32 bufferSize = format_.mSampleRate * format_.mBytesPerPacket * .5f;
 	
     for (int i = 0; i < 3; i++) {
         FAIL_ON_ERR(AudioQueueAllocateBuffer(queue_, bufferSize, &buffers_[i]));

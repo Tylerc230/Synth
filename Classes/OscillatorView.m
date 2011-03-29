@@ -7,40 +7,21 @@
 //
 
 #import "OscillatorView.h"
+#define cStrokeWidth 10
 
 
 @implementation OscillatorView
 
-- (id)init
+- (void)drawRect:(CGRect)rect
 {
-	UIImage * cicle = [UIImage imageNamed:@"circle.jpg"];
-	if((self = [super initWithImage:cicle]))
-	{
-		CGRect frame = self.frame;
-		frame.size.width *= .25;
-		frame.size.height *= .25;
-		self.frame = frame;
-	}
-	return  self;
+	CGContextRef currentContext = UIGraphicsGetCurrentContext();
+	CGContextSetFillColorWithColor(currentContext, [UIColor greenColor].CGColor);
+	CGContextSetStrokeColorWithColor(currentContext, [UIColor whiteColor].CGColor);
+	CGContextSetLineWidth(currentContext, 5.f);
+	CGPoint center = CGPointMake(rect.size.width/2, rect.size.height/2);
+	CGContextAddArc(currentContext, center.x, center.y, (rect.size.width - cStrokeWidth)/2, 0, 2 * M_PI, YES);
 	
-}
-
-
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-	
-	
-}
-
-- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
-{
-	
-	
-}
-
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
-{
-	
+	CGContextDrawPath(currentContext,  kCGPathFillStroke);
 }
 
 @end

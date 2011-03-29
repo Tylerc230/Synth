@@ -32,7 +32,7 @@
 
 - (Oscillator*)createOscillator:(int)index
 {
-	OscillatorView * view = [[OscillatorView alloc] init];
+	OscillatorView * view = [[OscillatorView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
 	[oscillatorViews_ addObject:view];
 	[self.view addSubview:view];
 	int oscillatorId = 3000 + oscillatorViews_.count;

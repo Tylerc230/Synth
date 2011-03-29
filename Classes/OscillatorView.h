@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface OscillatorView : UIImageView {
+@interface OscillatorView : UIView {
     
 }
 

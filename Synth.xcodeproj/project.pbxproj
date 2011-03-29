@@ -79,8 +79,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				7077E218132370D900E6FFA2 /* New Group1 */,
-				7077E2001323476700E6FFA2 /* New Group */,
+				7077E218132370D900E6FFA2 /* Views */,
+				7077E2001323476700E6FFA2 /* Model */,
 				1D3623240D0F684500981E51 /* SynthAppDelegate.h */,
 				1D3623250D0F684500981E51 /* SynthAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* SynthViewController.h */,
@@ -140,7 +140,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7077E2001323476700E6FFA2 /* New Group */ = {
+		7077E2001323476700E6FFA2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				7077E201132347A700E6FFA2 /* Oscillator.h */,
@@ -154,10 +154,10 @@
 				70E005BD132766E50081FB79 /* TriangleOscillator.h */,
 				70E005BE132766E50081FB79 /* TriangleOscillator.m */,
 			);
-			name = "New Group";
+			name = Model;
 			sourceTree = "<group>";
 		};
-		7077E218132370D900E6FFA2 /* New Group1 */ = {
+		7077E218132370D900E6FFA2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				7077E2191323714F00E6FFA2 /* OscillatorView.h */,
@@ -166,7 +166,7 @@
 				70E005C1132774490081FB79 /* RadialMenuViewController.m */,
 				70E005C2132774490081FB79 /* RadialMenuViewController.xib */,
 			);
-			name = "New Group1";
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
