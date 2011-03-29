@@ -10,7 +10,7 @@
 #import "OscillatorController.h"
 #import "RadialMenuViewController.h"
 
-@interface SynthViewController : UIViewController {
+@interface SynthViewController : UIViewController<UIAlertViewDelegate> {
 	OscillatorController * controller_;
 	NSMutableArray * oscillatorViews_;
 	Oscillator * draggingOsc_;

@@ -33,6 +33,7 @@
 - (Oscillator*)createOscillator:(int)index
 {
 	OscillatorView * view = [[OscillatorView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+	[view addTarget:self action:@selector(editOscillator:) forControlEvents:UIControlEventTouchUpInside];
 	[oscillatorViews_ addObject:view];
 	[self.view addSubview:view];
 	int oscillatorId = 3000 + oscillatorViews_.count;
@@ -52,10 +53,6 @@
 			break;
 	}
 	Oscillator * osc = [[osClass alloc] init];
-	Oscillator * pitchMod = [[SineOscillator alloc] init];
-	pitchMod.frequency = .5f;
-	osc.pitchModulator = pitchMod;
-	[pitchMod release];
 	[controller_ addOscillator:osc withId:oscillatorId];
 	[osc release];
 	return osc;
@@ -111,10 +108,12 @@
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
+	
 	[longHold_ invalidate], longHold_ = nil;
 	OscillatorView * currentView = (OscillatorView*)[self.view viewWithTag:draggingOsc_.oscId];
 	currentView.center = [[touches anyObject] locationInView:self.view];
 	[self setOsc:draggingOsc_ withTouch:[touches anyObject]];
+	 
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
@@ -141,6 +140,23 @@
 	[currentMenu_.view removeFromSuperview];
 	[currentMenu_ release];
 }
+
+- (void)editOscillator:(OscillatorView *)oscillatorView
+{
+	UIAlertView * confirmation = [[UIAlertView alloc] initWithTitle:@"" message:@"Are you sure you want to edit this oscillator" delegate:self cancelButtonTitle:@"Don't edit" otherButtonTitles:@"Edit", nil];
+	[confirmation show];
+}
+
+#pragma UIAlertView Delegate Methods
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	if(buttonIndex == 1)
+	{
+		
+	}
+	[alertView release];
+}
+
 
 - (void)itemIndexSelected:(int)itemIndex
 {

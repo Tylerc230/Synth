@@ -24,4 +24,27 @@
 	CGContextDrawPath(currentContext,  kCGPathFillStroke);
 }
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	dragging_ = NO;
+	[super touchesBegan:touches withEvent:event];
+	[self.superview touchesBegan:touches withEvent:event];
+
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	[super touchesMoved:touches withEvent:event];
+	[self.superview touchesMoved:touches withEvent:event];
+	dragging_ = YES;
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	if(!dragging_)
+		[super touchesEnded:touches withEvent:event];
+	[self.superview touchesEnded:touches withEvent:event];
+	
+}
+
 @end

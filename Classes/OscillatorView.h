@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 
 
-@interface OscillatorView : UIView {
-    
+@interface OscillatorView : UIControl {
+    BOOL dragging_;
 }
 
 @end
