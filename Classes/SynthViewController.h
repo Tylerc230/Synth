@@ -2,24 +2,16 @@
 //  SynthViewController.h
 //  Synth
 //
-//  Created by Tyler Casselman on 3/5/11.
+//  Created by Tyler Casselman on 3/28/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "OscillatorController.h"
-#import "RadialMenuViewController.h"
+#import <Foundation/Foundation.h>
+#import "EditorViewController.h"
 
-@interface SynthViewController : UIViewController<UIAlertViewDelegate> {
-	OscillatorController * controller_;
-	NSMutableArray * oscillatorViews_;
-	Oscillator * draggingOsc_;
-	NSTimer * longHold_;
-	UITouch * currentTouch_;
-	RadialMenuViewController * currentMenu_;
+@interface SynthViewController : EditorViewController {
+    
+  OscillatorController * controller_;
 }
 
-- (void)itemIndexSelected:(int)itemIndex;
-
 @end
-

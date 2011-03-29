@@ -12,18 +12,17 @@
 @implementation SynthAppDelegate
 
 
-@synthesize viewController;
-
-
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
     // Override point for customization after application launch.
 
     // Add the view controller's view to the window and display.
 	UIWindow * window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-	viewController = [[SynthViewController alloc] init];
-    [window addSubview:viewController.view];
+	UIViewController * viewController = [[SynthViewController alloc] init];
+	UINavigationController * navController = [[UINavigationController alloc] initWithRootViewController:viewController];
+	[viewController release];
+
+    [window addSubview:navController.view];
     [window makeKeyAndVisible];
     return YES;
 }
@@ -78,7 +77,6 @@
 
 
 - (void)dealloc {
-    [viewController release];
     [super dealloc];
 }
 

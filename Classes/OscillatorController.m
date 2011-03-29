@@ -63,10 +63,9 @@ static void buffer_callback(void * userData, AudioQueueRef inAQ, AudioQueueBuffe
 {
 }
 
-- (void)addOscillator:(Oscillator * )osc withId:(int)oscillatorId
+- (void)addOscillator:(Oscillator * )osc
 {
-	osc.oscId = oscillatorId;
-	[oscillators_ setObject:osc forKey:[NSNumber numberWithInt:oscillatorId]];
+	[oscillators_ setObject:osc forKey:[NSNumber numberWithInt:osc.oscId]];
 }
 
 - (Oscillator *)oscillatorWithId:(int)oscId

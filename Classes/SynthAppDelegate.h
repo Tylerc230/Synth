@@ -8,12 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class SynthViewController;
+@class EditorViewController;
 
 @interface SynthAppDelegate : NSObject <UIApplicationDelegate> {
-    SynthViewController *viewController;
 }
 
-@property (nonatomic, retain) IBOutlet SynthViewController *viewController;
 @end
 

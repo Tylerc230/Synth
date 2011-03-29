@@ -23,7 +23,7 @@
 }
 @property (nonatomic, readonly) BOOL playing;
 - (void)setup;
-- (void)addOscillator:(Oscillator * )osc withId:(int)id;
+- (void)addOscillator:(Oscillator * )osc;
 - (Oscillator *)oscillatorWithId:(int)oscId;
 - (void)stop;
 - (void)play;

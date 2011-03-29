@@ -13,7 +13,7 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		2899E5220DE3E06400AC0155 /* SynthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* SynthViewController.xib */; };
-		28D7ACF80DDB3853001CB0EB /* SynthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* SynthViewController.m */; };
+		28D7ACF80DDB3853001CB0EB /* EditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* EditorViewController.m */; };
 		701E45DD132310BD003F5C71 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701E45DC132310BD003F5C71 /* AudioToolbox.framework */; };
 		7077E1FF1323456D00E6FFA2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7077E1FE1323456D00E6FFA2 /* AVFoundation.framework */; };
 		7077E203132347A700E6FFA2 /* Oscillator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7077E202132347A700E6FFA2 /* Oscillator.m */; };
@@ -21,6 +21,9 @@
 		7077E20913234A9F00E6FFA2 /* OscillatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7077E20813234A9E00E6FFA2 /* OscillatorController.m */; };
 		7077E21B1323714F00E6FFA2 /* OscillatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7077E21A1323714F00E6FFA2 /* OscillatorView.m */; };
 		7077E21D132375F500E6FFA2 /* circle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7077E21C132375F500E6FFA2 /* circle.jpg */; };
+		70C5C4EB1341AD660058FB3A /* SynthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C5C4EA1341AD640058FB3A /* SynthViewController.m */; };
+		70C5C4EE1341BD660058FB3A /* OscillatorEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C5C4ED1341BD610058FB3A /* OscillatorEditorViewController.m */; };
+		70C5C4F01341C2CA0058FB3A /* OscillatorEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70C5C4EF1341C2C80058FB3A /* OscillatorEditorViewController.xib */; };
 		70E005BC132766C30081FB79 /* SquareOscillator.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E005BB132766C30081FB79 /* SquareOscillator.m */; };
 		70E005BF132766E50081FB79 /* TriangleOscillator.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E005BE132766E50081FB79 /* TriangleOscillator.m */; };
 		70E005C31327744A0081FB79 /* RadialMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E005C1132774490081FB79 /* RadialMenuViewController.m */; };
@@ -35,8 +38,8 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2899E5210DE3E06400AC0155 /* SynthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SynthViewController.xib; path = ../SynthViewController.xib; sourceTree = "<group>"; };
-		28D7ACF60DDB3853001CB0EB /* SynthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthViewController.h; sourceTree = "<group>"; };
-		28D7ACF70DDB3853001CB0EB /* SynthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SynthViewController.m; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* EditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* EditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Synth_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Synth_Prefix.pch; sourceTree = "<group>"; };
 		701E45DC132310BD003F5C71 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -50,6 +53,11 @@
 		7077E2191323714F00E6FFA2 /* OscillatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscillatorView.h; sourceTree = "<group>"; };
 		7077E21A1323714F00E6FFA2 /* OscillatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OscillatorView.m; sourceTree = "<group>"; };
 		7077E21C132375F500E6FFA2 /* circle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = circle.jpg; sourceTree = "<group>"; };
+		70C5C4E91341AD630058FB3A /* SynthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthViewController.h; sourceTree = "<group>"; };
+		70C5C4EA1341AD640058FB3A /* SynthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SynthViewController.m; sourceTree = "<group>"; };
+		70C5C4EC1341BD600058FB3A /* OscillatorEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscillatorEditorViewController.h; sourceTree = "<group>"; };
+		70C5C4ED1341BD610058FB3A /* OscillatorEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OscillatorEditorViewController.m; sourceTree = "<group>"; };
+		70C5C4EF1341C2C80058FB3A /* OscillatorEditorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OscillatorEditorViewController.xib; sourceTree = "<group>"; };
 		70E005BA132766C30081FB79 /* SquareOscillator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareOscillator.h; sourceTree = "<group>"; };
 		70E005BB132766C30081FB79 /* SquareOscillator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareOscillator.m; sourceTree = "<group>"; };
 		70E005BD132766E50081FB79 /* TriangleOscillator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleOscillator.h; sourceTree = "<group>"; };
@@ -157,9 +165,14 @@
 		7077E218132370D900E6FFA2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				28D7ACF60DDB3853001CB0EB /* EditorViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* EditorViewController.m */,
+				70C5C4E91341AD630058FB3A /* SynthViewController.h */,
+				70C5C4EA1341AD640058FB3A /* SynthViewController.m */,
 				2899E5210DE3E06400AC0155 /* SynthViewController.xib */,
-				28D7ACF60DDB3853001CB0EB /* SynthViewController.h */,
-				28D7ACF70DDB3853001CB0EB /* SynthViewController.m */,
+				70C5C4EC1341BD600058FB3A /* OscillatorEditorViewController.h */,
+				70C5C4ED1341BD610058FB3A /* OscillatorEditorViewController.m */,
+				70C5C4EF1341C2C80058FB3A /* OscillatorEditorViewController.xib */,
 				7077E2191323714F00E6FFA2 /* OscillatorView.h */,
 				7077E21A1323714F00E6FFA2 /* OscillatorView.m */,
 				70E005C0132774490081FB79 /* RadialMenuViewController.h */,
@@ -221,6 +234,7 @@
 				2899E5220DE3E06400AC0155 /* SynthViewController.xib in Resources */,
 				7077E21D132375F500E6FFA2 /* circle.jpg in Resources */,
 				70E005C41327744A0081FB79 /* RadialMenuViewController.xib in Resources */,
+				70C5C4F01341C2CA0058FB3A /* OscillatorEditorViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +247,7 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* SynthAppDelegate.m in Sources */,
-				28D7ACF80DDB3853001CB0EB /* SynthViewController.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* EditorViewController.m in Sources */,
 				7077E203132347A700E6FFA2 /* Oscillator.m in Sources */,
 				7077E2061323481E00E6FFA2 /* SineOscillator.m in Sources */,
 				7077E20913234A9F00E6FFA2 /* OscillatorController.m in Sources */,
@@ -241,6 +255,8 @@
 				70E005BC132766C30081FB79 /* SquareOscillator.m in Sources */,
 				70E005BF132766E50081FB79 /* TriangleOscillator.m in Sources */,
 				70E005C31327744A0081FB79 /* RadialMenuViewController.m in Sources */,
+				70C5C4EB1341AD660058FB3A /* SynthViewController.m in Sources */,
+				70C5C4EE1341BD660058FB3A /* OscillatorEditorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
