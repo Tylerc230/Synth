@@ -19,10 +19,25 @@ c000000004CC128950000000000000110
 t1287727253
 s272
 
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000004CC1288A00000000000F34A0
+t1287727242
+s996512
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.h
+c000000004CC128840000000000000733
+t1287727236
+s1843
+
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
 c000000004CC1224600000000001EA9C0
 t1287725638
 s2009536
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.h
+c000000004CC1222F0000000000000A23
+t1287725615
+s2595
 
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 c000000004CC12246000000000029B310
@@ -49,30 +64,133 @@ c000000004CC12883000000000074D7B0
 t1287727235
 s7657392
 
+N/Users/tcasselman/Software_git/Synth/Classes/Oscillator.h
+c000000004D79B89B0000000000000309
+t1299822747
+s777
+i<Foundation/Foundation.h>
+
+N/Users/tcasselman/Software_git/Synth/Classes/Oscillator.m
+c000000004D79BB4800000000000004BD
+t1299823432
+s1213
+i"Oscillator.h"
+i"OscillatorController.h"
+
+N/Users/tcasselman/Software_git/Synth/Classes/OscillatorController.h
+c000000004D772CE900000000000002D9
+t1299655913
+s729
+i<Foundation/Foundation.h>
+i"Oscillator.h"
+i<AudioToolbox/AudioToolbox.h>
+i<AVFoundation/AVFoundation.h>
+
+N/Users/tcasselman/Software_git/Synth/Classes/OscillatorController.m
+c000000004D8F945F0000000000000E66
+t1301255263
+s3686
+i"OscillatorController.h"
+
+N/Users/tcasselman/Software_git/Synth/Classes/OscillatorView.h
+c000000004D7725E400000000000000E9
+t1299654116
+s233
+i<Foundation/Foundation.h>
+
+N/Users/tcasselman/Software_git/Synth/Classes/OscillatorView.m
+c000000004D77263D00000000000002A3
+t1299654205
+s675
+i"OscillatorView.h"
+
+N/Users/tcasselman/Software_git/Synth/Classes/RadialMenuViewController.h
+c000000004D773E7F0000000000000167
+t1299660415
+s359
+i<UIKit/UIKit.h>
+
+N/Users/tcasselman/Software_git/Synth/Classes/RadialMenuViewController.m
+c000000004D773E89000000000000053A
+t1299660425
+s1338
+i"RadialMenuViewController.h"
+
+N/Users/tcasselman/Software_git/Synth/Classes/RadialMenuViewController.xib
+c000000004D77460D000000000000373B
+t1299662349
+s14139
+
+N/Users/tcasselman/Software_git/Synth/Classes/SineOscillator.h
+c000000004D77307A00000000000000F9
+t1299656826
+s249
+i<Foundation/Foundation.h>
+i"Oscillator.h"
+
+N/Users/tcasselman/Software_git/Synth/Classes/SineOscillator.m
+c000000004D79BB5F00000000000001AD
+t1299823455
+s429
+i"SineOscillator.h"
+
+N/Users/tcasselman/Software_git/Synth/Classes/SquareOscillator.h
+c000000004D772FE10000000000000102
+t1299656673
+s258
+i<Foundation/Foundation.h>
+i"Oscillator.h"
+
+N/Users/tcasselman/Software_git/Synth/Classes/SquareOscillator.m
+c000000004D79B6130000000000000160
+t1299822099
+s352
+i"SquareOscillator.h"
+i"OscillatorController.h"
+
 N/Users/tcasselman/Software_git/Synth/Classes/SynthAppDelegate.h
-c000000004D72D42900000000000001D5
-t1299371049
-s469
+c000000004D7331950000000000000185
+t1299394965
+s389
 i<UIKit/UIKit.h>
 
 N/Users/tcasselman/Software_git/Synth/Classes/SynthAppDelegate.m
-c000000004D72D4290000000000000A8D
-t1299371049
-s2701
+c000000004D7334070000000000000AB1
+t1299395591
+s2737
 i"SynthAppDelegate.h"
 i"SynthViewController.h"
 
 N/Users/tcasselman/Software_git/Synth/Classes/SynthViewController.h
-c000000004D72D42900000000000000EA
-t1299371049
-s234
+c000000004D79B6600000000000000219
+t1299822176
+s537
 i<UIKit/UIKit.h>
+i"OscillatorController.h"
+i"RadialMenuViewController.h"
 
 N/Users/tcasselman/Software_git/Synth/Classes/SynthViewController.m
-c000000004D72D42900000000000005BB
-t1299371049
-s1467
+c000000004D79BBEA0000000000001242
+t1299823594
+s4674
 i"SynthViewController.h"
+i"SineOscillator.h"
+i"SquareOscillator.h"
+i"TriangleOscillator.h"
+i"OscillatorView.h"
+
+N/Users/tcasselman/Software_git/Synth/Classes/TriangleOscillator.h
+c000000004D7735970000000000000106
+t1299658135
+s262
+i<Foundation/Foundation.h>
+i"Oscillator.h"
+
+N/Users/tcasselman/Software_git/Synth/Classes/TriangleOscillator.m
+c000000004D79B6300000000000000177
+t1299822128
+s375
+i"TriangleOscillator.h"
 
 N/Users/tcasselman/Software_git/Synth/MainWindow.xib
 c000000004D72D4290000000000004E11
@@ -80,9 +198,9 @@ t1299371049
 s19985
 
 N/Users/tcasselman/Software_git/Synth/SynthViewController.xib
-c000000004D72D4290000000000001A3D
-t1299371049
-s6717
+c000000004D772E71000000000000271C
+t1299656305
+s10012
 
 N/Users/tcasselman/Software_git/Synth/Synth_Prefix.pch
 c000000004D72D42900000000000000B3
@@ -111,6 +229,10 @@ N/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/PkgI
 t1299371059
 s8
 
+N/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/RadialMenuViewController.nib
+t2
+s0
+
 N/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/Synth
 t1299371070
 s16952
@@ -118,6 +240,34 @@ s16952
 N/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/SynthViewController.nib
 t1299371067
 s795
+
+N/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/circle.jpg
+t2
+s0
+
+N/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/Oscillator.o
+t2
+s0
+
+N/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/OscillatorController.o
+t2
+s0
+
+N/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/OscillatorView.o
+t2
+s0
+
+N/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/RadialMenuViewController.o
+t2
+s0
+
+N/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/SineOscillator.o
+t2
+s0
+
+N/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/SquareOscillator.o
+t2
+s0
 
 N/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/Synth.LinkFileList
 c000000004D72D4330000000000000177
@@ -132,14 +282,23 @@ N/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Sy
 t1299371069
 s37452
 
+N/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/TriangleOscillator.o
+t2
+s0
+
 N/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/main.o
 t1299371069
 s6300
 
+N/Users/tcasselman/Software_git/Synth/circle.jpg
+c000000004D733A110000000000001BE0
+t1299397137
+s7136
+
 N/Users/tcasselman/Software_git/Synth/main.m
-c000000004D72D4290000000000000169
-t1299371049
-s361
+c000000004D7332C40000000000000179
+t1299395268
+s377
 i<UIKit/UIKit.h>
 
 N/var/folders/f-/f-e+G6fbF9qNM2Z1o+hI+k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Synth_Prefix-guaqfnjckljtuaasqwwobtfpcqvp/Synth_Prefix.pch.gch
@@ -147,13 +306,31 @@ t1299371069
 s15453392
 
 NSynth-Info.plist
-c000000004D72D429000000000000038D
-t1299371049
-s909
+c000000004D73339E0000000000000383
+t1299395486
+s899
 
 CCheck dependencies
 r0
 lSLF07#2@18"Check dependencies321063859#321063859#0(0"0(0#1#0"3343187568374212096#0"0#
+
+CCompileC build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/Oscillator.o /Users/tcasselman/Software_git/Synth/Classes/Oscillator.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/OscillatorController.o /Users/tcasselman/Software_git/Synth/Classes/OscillatorController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/OscillatorView.o /Users/tcasselman/Software_git/Synth/Classes/OscillatorView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/RadialMenuViewController.o /Users/tcasselman/Software_git/Synth/Classes/RadialMenuViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/SineOscillator.o /Users/tcasselman/Software_git/Synth/Classes/SineOscillator.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/SquareOscillator.o /Users/tcasselman/Software_git/Synth/Classes/SquareOscillator.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
 
 CCompileC build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/SynthAppDelegate.o /Users/tcasselman/Software_git/Synth/Classes/SynthAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s321063869.371078
@@ -181,6 +358,9 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@74"Compile /Users/tcasselman/Software_git/Synth/Classes/SynthViewController.m321063869#321063869#0(0"0(0#0#66"/Users/tcasselman/Software_git/Synth/Classes/SynthViewController.m8600891680#1890"    cd /Users/tcasselman/Software_git/Synth    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-generated-files.hmap -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-own-target-headers.hmap -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-all-target-headers.hmap -iquote /Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-project-headers.hmap -F/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator -I/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/include -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/DerivedSources/i386 -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/DerivedSources -include /var/folders/f-/f-e+G6fbF9qNM2Z1o+hI+k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Synth_Prefix-guaqfnjckljtuaasqwwobtfpcqvp/Synth_Prefix.pch -c /Users/tcasselman/Software_git/Synth/Classes/SynthViewController.m -o /Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/SynthViewController.o0#
 
+CCompileC build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/TriangleOscillator.o /Users/tcasselman/Software_git/Synth/Classes/TriangleOscillator.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/main.o /Users/tcasselman/Software_git/Synth/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s321063869.368680
 e321063869.708810
@@ -193,6 +373,9 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@51"Compile /Users/tcasselman/Software_git/Synth/main.m321063869#321063869#0(0"0(0#0#43"/Users/tcasselman/Software_git/Synth/main.m8610503616#1852"    cd /Users/tcasselman/Software_git/Synth    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-generated-files.hmap -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-own-target-headers.hmap -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-all-target-headers.hmap -iquote /Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Synth-project-headers.hmap -F/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator -I/Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/include -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/DerivedSources/i386 -I/Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/DerivedSources -include /var/folders/f-/f-e+G6fbF9qNM2Z1o+hI+k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Synth_Prefix-guaqfnjckljtuaasqwwobtfpcqvp/Synth_Prefix.pch -c /Users/tcasselman/Software_git/Synth/main.m -o /Users/tcasselman/Software_git/Synth/build/Synth.build/Debug-iphonesimulator/Synth.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/tcasselman/Software_git/Synth/Classes/RadialMenuViewController.xib
+r0
 
 CCompileXIB /Users/tcasselman/Software_git/Synth/MainWindow.xib
 s321063859.517519
@@ -209,6 +392,9 @@ r1
 xCompileXIB
 x/Users/tcasselman/Software_git/Synth/SynthViewController.xib
 lSLF07#2@34"CompileXIB SynthViewController.xib321063859#321063867#0(0"0(0#0#60"/Users/tcasselman/Software_git/Synth/SynthViewController.xib8595079392#580"    cd /Users/tcasselman/Software_git/Synth    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/SynthViewController.nib /Users/tcasselman/Software_git/Synth/SynthViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCpResource build/Debug-iphonesimulator/Synth.app/circle.jpg circle.jpg
+r0
 
 CGenerateDSYMFile /Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app.dSYM /Users/tcasselman/Software_git/Synth/build/Debug-iphonesimulator/Synth.app/Synth
 s321063870.157677
