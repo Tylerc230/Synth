@@ -133,6 +133,7 @@ static void buffer_callback(void * userData, AudioQueueRef inAQ, AudioQueueBuffe
 		sampleL += oscFrame.left * INT16_MAX;
 		sampleR += oscFrame.right * INT16_MAX;
 	}
+	
 	sampleL /= numOscillators;
 	sampleR /= numOscillators;
 	return (sampleL << 16 | sampleR);

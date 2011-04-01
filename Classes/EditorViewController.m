@@ -17,6 +17,7 @@
 - (Oscillator*)createOscillator:(int)index;
 - (void)longHoldOccured:(NSTimer*) timer;
 - (void)showRadialMenu;
+- (void)setOsc:(Oscillator *) osc withPosition:(CGPoint) position;
 @end
 
 @implementation EditorViewController
@@ -24,7 +25,8 @@
 
 - (Oscillator*)createOscillator:(int)index
 {
-	OscillatorView * view = [[OscillatorView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+	CGPoint start = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
+	OscillatorView * view = [[OscillatorView alloc] initWithFrame:CGRectMake(start.x, start.y, 50, 50)];
 	[view addTarget:self action:@selector(editOscillator:) forControlEvents:UIControlEventTouchUpInside];
 	[oscillatorViews_ addObject:view];
 	[self.view addSubview:view];
@@ -46,33 +48,34 @@
 	}
 	Oscillator * osc = [[osClass alloc] init];
 	osc.oscId = oscillatorId;
+	[self setOsc:osc withPosition:start];
 	return [osc autorelease];
 	
 }
 
-- (float)pitchForTouch:(UITouch *)touch
+- (float)pitchForPosition:(CGPoint )position
 {
 	NSRange screenRange = [self rangeForScreen];
 	float base = screenRange.location;
 	float range = screenRange.length;
-	float y = [touch locationInView:self.view].y;
+	float y = position.y;
 	float windowHeight = self.view.frame.size.height;
 	float ratio = 1 - (y/windowHeight);
 	return ratio * range + base;
 }
 
-- (float)balanceForTouch:(UITouch *)touch
+- (float)balanceForPosition:(CGPoint )position
 {
 	float range = 1.0;
-	float x = [touch locationInView:self.view].x;
+	float x = position.x;
 	float ratio = x/self.view.frame.size.width;
 	return ratio * range;
 }
 
-- (void)setOsc:(Oscillator *) osc withTouch:(UITouch*) touch
+- (void)setOsc:(Oscillator *) osc withPosition:(CGPoint) position
 {
-	float pitch = [self pitchForTouch:touch];
-	float balance = [self balanceForTouch:touch];
+	float pitch = [self pitchForPosition:position];
+	float balance = [self balanceForPosition:position];
 	osc.frequency = pitch;
 	osc.balance = balance;
 	
@@ -93,7 +96,8 @@
 		[self showRadialMenu];
 		currentTouch_ = [touch retain];
 	}else{
-		[self setOsc:focusOscillator_ withTouch:[touches anyObject]];
+		CGPoint position = [[touches anyObject] locationInView:self.view];
+		[self setOsc:focusOscillator_ withPosition:position];
 		longHold_ = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(longHoldOccured:) userInfo:focusOscillator_ repeats:NO];
 	}
 }
@@ -103,8 +107,9 @@
 	
 	[longHold_ invalidate], longHold_ = nil;
 	OscillatorView * currentView = (OscillatorView*)[self.view viewWithTag:focusOscillator_.oscId];
-	currentView.center = [[touches anyObject] locationInView:self.view];
-	[self setOsc:focusOscillator_ withTouch:[touches anyObject]];
+	CGPoint position = [[touches anyObject] locationInView:self.view];
+	currentView.center = position;
+	[self setOsc:focusOscillator_ withPosition:position];
 	 
 }
 
@@ -143,7 +148,7 @@
 - (void)itemIndexSelected:(int)itemIndex
 {
 	Oscillator * osc = [self createOscillator:itemIndex];
-	[self setOsc:osc withTouch:currentTouch_];
+	[self setOsc:osc withPosition:[currentTouch_ locationInView:self.view]];
 	[self oscillatorCreated:osc];
 
 	[self hideRadialMenu];

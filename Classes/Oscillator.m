@@ -42,8 +42,8 @@
 	AudioFrame nextFrame;
 	float leftAmp = 1 - self.balance;
 	float rightAmp = self.balance;
-	nextFrame.left = sample * leftAmp;
-	nextFrame.right = sample * rightAmp;
+	nextFrame.left = sample ;//* leftAmp;
+	nextFrame.right = sample ;//* rightAmp;
 	[self update];
 	return nextFrame;
 }
